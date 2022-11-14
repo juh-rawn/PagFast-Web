@@ -7,6 +7,11 @@
   
 }
 
+.tela{
+    width: fit-content;
+    background-color: blue;
+}
+
 .titulo{
     
 }
