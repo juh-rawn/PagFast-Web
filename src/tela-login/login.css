@@ -1,25 +1,59 @@
+/* fundo da tela */
 .container{
   height: 100vh;  
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
+  background-color:#fff;
 }
 
+/* container que contem o titulo logo e botões */
 .tela{
-    width: fit-content;
-    background-color: blue;
+    width: 20%;
+    height: 45%;
+    background-color: #03ffff;
+    border-radius: 25px;
+    /* position: relative; */
 }
 
+/* css do logo */
+.logomarca
+
+/* css do titulo */
 .titulo{
-    
+  text-align: center; 
+  padding: 30px; 
 }
 
+/* css do botão de login */
 .loginbtn{
-
+  display: block;
+  width: 40%;
+  height: 10%;
+  margin: auto;
+  margin-top: 20%;
+  margin-bottom: 5%;
+  background-color: #D9D9D9;
 }
 
+/* css do mouse over do botão de login */
+.loginbtn:hover {
+  background-color: #cccccc;
+  cursor: pointer;
+ }
+
+ /* css botão cadastrar */
 .cadastrarbtn{
-
+  display: block;
+  width: 40%;
+  height: 10%;
+  margin: auto;
+  background-color: #D9D9D9;
 }
+
+/* mouse over do botão cadastrar */
+.cadastrarbtn:hover {
+  background-color: #cccccc;
+  cursor: pointer;
+ }

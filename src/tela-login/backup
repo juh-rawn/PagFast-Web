@@ -1,0 +1,10 @@
+{/* <div className="container">
+      <div className='tela'>
+        <div className='logomarca'>
+            <img src={pagfastLogo} alt="logo"/>
+        </div>
+        <h1 className="titulo">PagFast</h1>
+        <button className="loginbtn">Login</button>
+        <button className="cadastrarbtn">Cadastrar</button>
+      </div>
+    </div> */}
