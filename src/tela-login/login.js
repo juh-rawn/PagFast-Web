@@ -1,17 +1,55 @@
 //import {} from 'react-icons/fi'
-import React from 'react';
-import { View, KeyboardAvoidingView, Image, StyleSheet, Text, TextInput, TouchableOpacity, } from 'react-native';
+import React, {useState, useEffect} from 'react';
+import { View, KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, Animated } from 'react-native';
 //import { View, KeyboardAvoidingView, Image } from 'react-native';
 import './login.css';
 
 export default function App() {
+
+    const [offset] = useState(new Animated.ValueXY({x:0, y:95}));
+    const [opacity] = useState(new Animated.Value(0));
+
+    useEffect(()=> {
+      Animated.parallel([
+        Animated.spring(offset.y, {
+          toValue: 0,
+          speed: 4,
+          bounciness: 20
+        }),
+        Animated.timing(opacity, {
+          toValue: 1,
+          duration:200,
+        })
+      ]).start();
+
+    }, []);
+
   return (
     <KeyboardAvoidingView style={styles.background}>
         <View style={styles.containerLogo}>
             <Text>PagFast</Text>
-            <img src={require('./logo.jpg')} alt='logo'/>
+            <img 
+            style={{
+              width: '80%',
+              height: '80%',
+              margin: 'auto',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flex:1,
+            }}
+            src={require('./logo1.png')} alt='logo'/>
         </View>
-        <View style={styles.container}>
+        <Animated.View 
+        style={[
+          styles.container,
+          {
+            opacity: opacity,
+            transform: [
+              { translateY: offset.y}
+            ]
+          }
+          ]}
+        >
           <TextInput
           style={styles.input}
           placeholder="000.000.000/00"
@@ -34,7 +72,7 @@ export default function App() {
             <Text style={styles.registerText}>Cadastrar</Text>
           </TouchableOpacity>
 
-        </View>
+        </Animated.View>
       </KeyboardAvoidingView>
     );
 }
@@ -51,6 +89,8 @@ const styles = StyleSheet.create({
       flex:1,
       justifyContent:'center',
       backgroundColor:'red',
+      paddingBottom:10,
+      paddingTop:'15%' //deixar responsivo
     },
 
     container:{
