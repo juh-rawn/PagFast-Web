@@ -22,7 +22,7 @@ export default function App() {
         })
       ]).start();
 
-    }, []);
+    }, );
 
   return (
     <KeyboardAvoidingView style={styles.background}>
