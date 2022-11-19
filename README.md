@@ -68,3 +68,86 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+PagFast - Version "0.1.0"
+
+Descrição do Projeto: Esse projeto visa simular um banco digital.
+
+Para executar o projeto, será necessário instalar os seguintes programas:
+
+Desenvolvimento:
+
+O projeto foi entregue como um produto mínimo viável dado a sua complexidade, a abordagem escolhida para essa entrega foi construir o sistema de autenticação e login de usuário utilizando dados mockados. 
+
+Rotas da aplicação:
+
+Tela de Login: "/loginApp" 
+Tela usuário logado: "/userPage"
+
+Mock data:
+
+Foi configurado no campo de input uma mascara de CPF, 
+sendo assim ele espera receber no seguinte formato: 
+
+                000.000.000-00
+                
+ no usuário ele também espera receber uma senha para realizar a autenticação: 
+ 
+                senha: secret
+                
+
+
+Construção:
+
+Para fins de teste instalar as seguintes dependencias: 
+
+npm install node
+npm install
+yarn install
+
+npm start para rodar o projeto
+
+Dependencias: {
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-icons": "^4.6.0",
+    "react-native-web": "^0.18.10",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+
+Features
+
+O projeto foi entregue como um produto mínimo viável dado a sua complexidade, a abordagem escolhida para essa entrega foi construir o sistema de autenticação e login de usuário utilizando dados mockados. 
+
+Configuração
+Nesse tópico, é necessário informar o que é possível configurar no projeto para utilizá-lo. Por exemplo, projetos que recebem entrada de dados podem exigir parâmetros específicos na execução do arquivo jar. No nosso caso, para executar o projeto é necessário importá-lo no Eclipse, já que as bibliotecas não estão sendo por padrão empacotadas no arquivo jar gerado.
+
+Ex. Para executar o projeto, é necessário utilizar o Eclipse, para que o mesmo identifique as dependências necessárias para a execução no repositório .m2 do Maven. Uma vez importado o projeto, será criado um arquivo .classpath que irá informar qual a classe principal para a execução.
+
+Teste
+Se o seu projeto possuir testes, é necessário informar como executá-los. No nosso caso, os testes são gerenciados pelo Maven e por isso devem ser executados com o comando mvn test.
+
+Testes
+Para rodar os testes, utilize o comando abaixo:
+
+
+
+## Contribuições
+
+Front-End:
+        Andriano,
+        Jhonny,
+        Julia
+        
+Back-End:
+        David,
+        Gabriel,
+        Gilnei,
+        Wesley
+ 
+## Links
+
+Youtube: 
+
