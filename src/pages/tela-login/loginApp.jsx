@@ -3,6 +3,7 @@ import React, { useState, useContext } from "react";
 import { AuthContext } from "../../contexts/auth";
 
 import "./styles.css";
+import "./../../assets/logo.png";
 
 const LoginPage = () => {
     const { authenticated, login } = useContext(AuthContext);
@@ -20,6 +21,7 @@ const handleSubmit = (e) => {
     return (
         <div id="login">
             <h1 className="title"> Login do sistema</h1>
+            <img src={require('./../../assets/logo.png')} alt="logo PagFast"/>
             <p>{String(authenticated)}</p>
             <form className="form" onSubmit={handleSubmit}>
                 <div className="field">

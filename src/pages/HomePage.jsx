@@ -1,34 +1,21 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./tela-login/styles.css";
+//import "./tela-login/styles.css";
+import "./HomePage.css";
+import "./../assets/logo.png";
 
 const HomePage = () => {
 
     const navigate = useNavigate();
 
     const handleSubmit = event => {
-        event.preventDefault();
         navigate("/loginApp");
     }
 
-    // const [cpf, setCpf] = useState("");
-    // const [password, setPassword] = useState("");
-
-    // const handleSubmit = (e) => {
-    // e.preventDefault();
-    // console.log("submit", { cpf, password});
-// };
-// return (
-//     <form onSubmit={handleSubmit}>
-//       <input />
-//       <button type="submit">Submit</button>
-//     </form>
-//   );
-// }
-
     return (
         <div id="HomePage">
-            <h1 className="title"> pagFast</h1>
+            <h1 className="title"> PagFast</h1>
+            <img src={require('./../assets/logo.png')} alt="logo PagFast"/>
             <form onSubmit={handleSubmit}>
                 <div className="homeBtn">
                     <button type="submit">Login</button> 
