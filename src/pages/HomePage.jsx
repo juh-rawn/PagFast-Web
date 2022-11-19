@@ -1,7 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./tela-login/styles.css";
 
 const HomePage = () => {
+
+    const navigate = useNavigate();
+
+    const handleSubmit = event => {
+        event.preventDefault();
+        navigate("/loginApp");
+    }
 
     // const [cpf, setCpf] = useState("");
     // const [password, setPassword] = useState("");
@@ -10,12 +18,18 @@ const HomePage = () => {
     // e.preventDefault();
     // console.log("submit", { cpf, password});
 // };
+// return (
+//     <form onSubmit={handleSubmit}>
+//       <input />
+//       <button type="submit">Submit</button>
+//     </form>
+//   );
+// }
+
     return (
         <div id="HomePage">
             <h1 className="title"> pagFast</h1>
-            <form className="form" 
-            // onSubmit={handleSubmit}
-            >
+            <form onSubmit={handleSubmit}>
                 <div className="homeBtn">
                     <button type="submit">Login</button> 
                     {/* fazer validação de mascara e placeholder */}

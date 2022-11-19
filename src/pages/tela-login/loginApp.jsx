@@ -5,7 +5,7 @@ import { AuthContext } from "../../contexts/auth";
 import "./styles.css";
 
 const LoginPage = () => {
-    const { authenticaded, login } = useContext(AuthContext);
+    const { authenticated, login } = useContext(AuthContext);
 
     const [cpf, setCpf] = useState("");
     const [password, setPassword] = useState("");
@@ -20,7 +20,7 @@ const handleSubmit = (e) => {
     return (
         <div id="login">
             <h1 className="title"> Login do sistema</h1>
-            <p>{String(authenticaded)}</p>
+            <p>{String(authenticated)}</p>
             <form className="form" onSubmit={handleSubmit}>
                 <div className="field">
                     <label htmlFor="number">CPF</label> 
