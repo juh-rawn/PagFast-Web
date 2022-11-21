@@ -35,16 +35,17 @@ sendo assim ele espera receber no seguinte formato:
 
 ## Contribuições - Grupo 17
 
-              Front-End:
-                      Andriano,
-                      Jhonny,
-                      Julia
+               Front-End:
+                      ADRIANO MOURA DOS SANTOS,
+                      JHONNY ALMEIDA REIS,
+                      JULIA FERNANDES FRANCISCO COELHO
         
               Back-End:
-                      David,
-                      Gabriel,
-                      Gilnei,
-                      Wesley
+                      DAVID DE SOUZA BORGES,
+                      GABRIEL MACIESKI CORTES,
+                      GILNEI VIEIRA DO NASCIMENTO,
+                      WESLEY BRITO DE ALMEIDA
+ 
  
 ## Links
 
