@@ -28,6 +28,7 @@ export const AuthProvider = ({children}) => {
 
         //mock
         const loggedUser = {
+            nome: 'Fulano',
             cc: '123456',
             cpf,
         };
